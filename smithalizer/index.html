@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>THE SMITHALIZER</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="https://cdn.glitch.com/764e77c4-4477-4f7f-a6af-4af3e3688a10%2F764e77c4-4477-4f7f-a6af-4af3e3688a10_music_sharp_sign%20(3).png?v=1571316227485">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script2.js" defer></script>
+  </head>  
+  <body>
+    <h1>THE SMITHALIZER</h1>
+    <span>input notes from bottom to top as seen on paper<br/>sharps: #, x<br/>flats: b, bb<br/>if inverted, put inversion number at end<br/></span><div id="spoilers"><span id="stext" onclick="doSpoiler()">HOW TO INPUT STUFF [CLICK]</span></div><br/>
+    <button id="cochbut" type="button" onclick="doCoCh()">Common Chord Mode</button><form onsubmit="return customSubmit()" autocomplete="off"><input id="noteinput" /><button id="subbut" type="button" onclick="newMainBaybee(document.getElementById('noteinput').value)">+</button></form>
+    <br/><span id="infoout"></span>
+  </body>
+  <canvas id="piccie" width="200" height="400"></canvas><br/>
+</html>
+
